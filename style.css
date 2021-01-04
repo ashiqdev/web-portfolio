@@ -2,30 +2,99 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
 h1 {
   font-size: 50px;
+  font-weight: 600;
 }
 
-.name-highlight {
+h2 {
+  font-size: 40px;
+}
+
+p {
+  color: dimgray;
+}
+
+.adjust {
+  padding-left: 4px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.top-banner {
+  background-image: url('./assets/images/top-banner.png');
+  background-repeat: no-repeat;
+  margin-bottom: 10rem;
+}
+
+.dream-area {
+  background-image: url('./assets/images/dream-bg.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.top-banner::after,
+.dream-area::after,
+.experience-area::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.orange-highlight {
   color: orange;
-}
-
-.first-section {
-    /* max-width: 1200px; */
 }
 
 .half-width {
   width: 40%;
   float: left;
-  margin-left: 10rem;
-  padding-left: 2%;
+  margin-left: 5rem;
+  padding-left: 5%;
 }
 
 .half-width img {
   width: 100%;
+}
 
+.link-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(45deg, lightSalmon, tomato);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
+.single-experience {
+  box-shadow: 10px 10px 40px gray;
+  border-radius: 5px;
+  height: 330px;
+  margin-bottom: 5rem;
+  background-color: white;
+}
+
+.experience-area {
+  background-image: url('./assets/images/exp-bg.png');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#full-stack {
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, lightSalmon, tomato);
+  border-image-slice: 1;
+}
+
+#baby-web {
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, blue, cyan);
+  border-image-slice: 1;
+}
+
+footer {
+    text-align: center;
 }
