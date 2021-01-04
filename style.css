@@ -84,17 +84,26 @@ body {
 }
 
 #full-stack {
-  border-left: 7px solid;
-  border-image: linear-gradient(180deg, lightSalmon, tomato);
-  border-image-slice: 1;
+  
+  padding: 0.5rem;
+  border-left: 7px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(to right, white, white),
+    linear-gradient(180deg, lightSalmon, tomato);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
 }
 
 #baby-web {
-  border-left: 7px solid;
-  border-image: linear-gradient(180deg, blue, cyan);
-  border-image-slice: 1;
+  padding: 0.5rem;
+  border-left: 7px solid transparent;
+  border-radius: 5px;
+  background: linear-gradient(to right, white, white),
+    linear-gradient(180deg, blue, cyan);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
